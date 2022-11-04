@@ -8,7 +8,7 @@ import {
 } from "@expo-google-fonts/roboto";
 
 import { Loading } from "./src/components/Loading";
-import { SignIn } from "./src/screens/SignIn";
+import { Pools } from "./src/screens/Pools";
 
 import { AuthContextProvider } from "./src/contexts/AuthContext";
 
@@ -30,7 +30,7 @@ export default function App() {
           translucent
         />
 
-        {fontsLoaded ? <SignIn /> : <Loading />}
+        {fontsLoaded ? <Pools /> : <Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
